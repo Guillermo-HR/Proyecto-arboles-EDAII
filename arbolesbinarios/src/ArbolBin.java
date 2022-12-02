@@ -10,12 +10,8 @@ public class ArbolBin {
         root = null;
     }
 
-    public ArbolBin(String val) {
-        root = new Nodo(val);
-    }
-
-    public ArbolBin(Nodo root) {
-        this.root = root;
+    public void setRoot(Nodo padre){
+        root = padre;
     }
 
     public void add(Nodo padre, Nodo hijo, int lado) {

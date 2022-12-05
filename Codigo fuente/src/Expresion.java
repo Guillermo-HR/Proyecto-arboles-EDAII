@@ -20,7 +20,7 @@ public class Expresion {
         operadores.add("^");
 
         // Operadores especiales
-        especiales.add("sin_"); // seno "s"
+        especiales.add("sen_"); // seno "s"
         especiales.add("cos_"); // coseno "c"
         especiales.add("tan_"); // tangente "t"
         especiales.add("asin"); // arcoseno "a"
@@ -158,7 +158,7 @@ public class Expresion {
         return true;
     }
 
-    private void listar() {
+    public void listar() {
         System.out.println("Opciones validas: ");
         for (int i = 0; i < caracteres.size(); i++) {
             System.out.print(caracteres.get(i) + " ");

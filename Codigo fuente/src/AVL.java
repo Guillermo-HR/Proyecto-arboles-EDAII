@@ -2,11 +2,11 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class AVL {
+    ArbolAVL nuevoArbol = new ArbolAVL();
     public int menuAVL() {
         Scanner entrada = new Scanner(System.in);
         boolean salida = false;
         int opcion;
-        ArbolAVL nuevoArbol = new ArbolAVL();
         while (!salida) {
             System.out.println("-------------------------\nMenu AVL\n-------------------------");
             System.out.println("Elige la opcion deseada. ");

@@ -298,11 +298,12 @@ public class ExpAritmetica extends ArbolBin {
                 System.out.println("1. Ingresar expresion");
                 System.out.println("2. Mostrar arbol");
                 System.out.println("3. Evaluar expresion");
+                System.out.println("4. Ayuda");
                 System.out.println("0. Salir");
                 System.out.print("Opcion: ");
                 opcion = sc.nextInt();
                 System.out.println("-------------------------\n");
-            } while (opcion < 0 || opcion > 3);
+            } while (opcion < 0 || opcion > 4);
             switch (opcion) {
                 case 1: // Ingresar expresion
                     leer();
@@ -324,6 +325,8 @@ public class ExpAritmetica extends ArbolBin {
                     } else {
                         System.out.println("Debes ingresar una expresion primero");
                     }
+                case 4: // Ayuda
+                    expresion.listar();
                     break;
             }
         } while (opcion != 0);
